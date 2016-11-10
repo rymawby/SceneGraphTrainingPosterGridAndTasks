@@ -1,0 +1,22 @@
+<component name="DataLoader" extends="Task">
+
+  <interface>
+    <field id="contentUri" type="string"/>
+    <field id="data" type="assocArray"/>
+  </interface>
+
+  <script type="text/brightscript" ><![CDATA[
+
+    function init() as Void
+      m.top.functionName = "getContent"
+    end function
+
+    function getContent() as Void
+      dataTransfer = createObject("roUrlTransfer")
+      dataTransfer.setUrl(m.top.contentUri)
+      m.top.data = parseJSON(dataTransfer.getToString())
+    end function
+
+    ]]></script>
+
+</component>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="MainScene" extends="Scene" >
+    <interface>
+    </interface>
+
+    <children>
+
+      <Poster
+        id="backgroundPoster"
+        uri=""
+        width="1280"
+        height="720"
+        translation="[0,0]" />
+
+      <PosterGrid
+        id="posterGrid"
+        translation="[100,100]"
+        basePosterSize="[170,210]"
+        itemSpacing="[15,32]"
+        numColumns="6"
+        numRows="1"
+        />
+
+    </children>
+    <script type="text/brightscript" uri="pkg://components/mainScene/MainScene.brs" />
+    <script type="text/brightscript" uri="pkg://source/parsers/DataParser.brs" />
+</component>
