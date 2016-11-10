@@ -52,7 +52,6 @@ Next we need to add our [PosterGrid](http://sdkdocs.roku.com/display/sdkdoc/Post
         itemSpacing="[15, 32]"
         numColumns="6"
         numRows="1"
-        fixedLayout="true"
         />
 
     </children>
